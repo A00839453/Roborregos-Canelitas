@@ -46,6 +46,13 @@ void DesplazarDerecha(int speed) {
     motor4.drive(-speed);
 }
 
+void DetenerMotores() {
+    motor1.drive(0);
+    motor2.drive(0);
+    motor3.drive(0);
+    motor4.drive(0);
+}
+
 // Control de la pinza del servomotor
 void AbrirPinza() {
     gripperServo.write(150);  // Ángulo de apertura de la pinza

@@ -1,6 +1,8 @@
 #include "RoboVariables.h"
 #include "RoboFunciones.h"
 
+//Codigo para probar cada uno de los componentes de nuestro robot.
+//Empecé a progamarlo hasta que estuve seguro de que todo funcionaba relativamente normal.
 void setup() {
     Serial.begin(9600);
     // Configuración de pines de los sensores ultrasónicos como salida y entrada
@@ -23,9 +25,9 @@ void loop() {
     delay(2000);
     GirarIzquierda(255);
     delay(2000);
-    GirarDerecha(255);
+    GirarDerecha(100);
     delay(2000);
-    DesplazarIzquierda(255);
+    /*DesplazarIzquierda(255);
     delay(5000);
     DesplazarDerecha(255);
     delay(2000);
@@ -33,5 +35,5 @@ void loop() {
     ProbarPinza();
     Leer_Sensores_ir(); // Lee e imprime los valores de los 16 sensores en el monitor serial
     delay(10000);         // Espera medio segundo para la siguiente lectura
-    MostrarEspectroRGB();  // Muestra el espectro de colores en la barra
+    MostrarEspectroRGB();  // Muestra el espectro de colores en la barra*/
 }
